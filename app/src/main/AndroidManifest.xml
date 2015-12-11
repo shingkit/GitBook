@@ -15,7 +15,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".LambdaActivity"></activity>
+        <activity android:name=".LambdaActivity" />
+        <activity android:name=".rxAndroid.RxAndroidActivity"></activity>
     </application>
 
 </manifest>
