@@ -9,3 +9,5 @@
 
 .idea/
 gradle.properties
+.idea/misc.xml
+.idea/gradle.xml
