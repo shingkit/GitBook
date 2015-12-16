@@ -44,11 +44,13 @@ public class RxBindingActivity extends AppCompatActivity {
             tvBinding.setText("点击上面的按钮，我变啦！！！");
         });
 
-        RxTextView.textChanges(tvBinding).subscribe((event) -> {
+        //oncreate时会执行一次toast，使用skip(int i) 忽略初始化时第一次发送的事件
+
+        RxTextView.textChanges(tvBinding).skip(1).subscribe((event) -> {
             Toast.makeText(RxBindingActivity.this, "文字变了，我也变！", Toast.LENGTH_SHORT).show();
         });
 
-        RxSearchView.queryTextChanges(searchView).
+        RxSearchView.queryTextChanges(searchView).skip(1).
                 throttleFirst(3000, TimeUnit.MILLISECONDS).subscribe((text) -> {
             Toast.makeText(RxBindingActivity.this, "查询文字" + text, Toast.LENGTH_SHORT).show();
         });
