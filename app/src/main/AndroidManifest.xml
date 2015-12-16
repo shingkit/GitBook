@@ -17,6 +17,7 @@
         </activity>
         <activity android:name=".LambdaActivity" />
         <activity android:name=".rxAndroid.RxAndroidActivity"></activity>
+        <activity android:name=".rxAndroid.rxbinding.RxBindingActivity"></activity>
     </application>
 
 </manifest>

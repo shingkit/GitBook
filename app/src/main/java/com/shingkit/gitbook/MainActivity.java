@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.shingkit.gitbook.rxAndroid.RxAndroidActivity;
+import com.shingkit.gitbook.rxAndroid.rxbinding.RxBindingActivity;
 
 import butterknife.ButterKnife;
 import butterknife.OnClick;
@@ -26,5 +27,10 @@ public class MainActivity extends AppCompatActivity {
     @OnClick(R.id.rxandroid)
     public void navigate2rxAndroid() {
         startActivity(new Intent(this, RxAndroidActivity.class));
+    }
+
+    @OnClick(R.id.rxbinding)
+    public void navigate2rxBinding() {
+        startActivity(new Intent(this, RxBindingActivity.class));
     }
 }

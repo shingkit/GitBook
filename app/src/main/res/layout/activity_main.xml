@@ -8,13 +8,19 @@
 
     <Button
         android:id="@+id/lambda"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="RetroLambda" />
 
     <Button
         android:id="@+id/rxandroid"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="rxjava" />
+        android:text="rxandroid" />
+
+    <Button
+        android:id="@+id/rxbinding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="rxbinding" />
 </LinearLayout>
