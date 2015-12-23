@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.shingkit.gitbook.rxAndroid.RxAndroidActivity;
+import com.shingkit.gitbook.rxAndroid.RxLifecycleActivity;
 import com.shingkit.gitbook.rxAndroid.rxbinding.RxBindingActivity;
 
 import butterknife.ButterKnife;
@@ -32,5 +33,10 @@ public class MainActivity extends AppCompatActivity {
     @OnClick(R.id.rxbinding)
     public void navigate2rxBinding() {
         startActivity(new Intent(this, RxBindingActivity.class));
+    }
+
+    @OnClick(R.id.rxLifeCycle)
+    public void navigate2rxlifecycle() {
+        startActivity(new Intent(this, RxLifecycleActivity.class));
     }
 }
