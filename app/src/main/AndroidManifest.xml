@@ -18,7 +18,8 @@
         <activity android:name=".LambdaActivity" />
         <activity android:name=".rxAndroid.RxAndroidActivity" />
         <activity android:name=".rxAndroid.rxbinding.RxBindingActivity" />
-        <activity android:name=".rxAndroid.RxLifecycleActivity"></activity>
+        <activity android:name=".rxAndroid.RxLifecycleActivity" />
+        <activity android:name=".AnnoActivity"></activity>
     </application>
 
 </manifest>

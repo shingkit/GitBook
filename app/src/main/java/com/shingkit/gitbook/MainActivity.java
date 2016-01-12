@@ -39,4 +39,7 @@ public class MainActivity extends AppCompatActivity {
     public void navigate2rxlifecycle() {
         startActivity(new Intent(this, RxLifecycleActivity.class));
     }
+
+    @OnClick(R.id.anno)
+    public void navigate2Annotation(){startActivity(new Intent(this, AnnoActivity.class));}
 }

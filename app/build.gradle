@@ -47,4 +47,7 @@ dependencies {
 
     // If you want to use Navi for providers
 //    compile 'com.trello:rxlifecycle-navi:0.4.0'
+
+    //annotation
+//    compile 'com.android.support:support-annotations:23.1.1'
 }
